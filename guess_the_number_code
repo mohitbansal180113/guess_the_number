@@ -24,7 +24,7 @@ def game():
     answer = random.randint(1, 50)
     level = input("Choose level of difficulty...\nType 'easy' or 'hard' : ").lower()
     attempts = set_difficulty(level)
-    if attempts != EASY_LEVEL_ATTEMPTS or attempts != HARD_LEVEL_ATTEMPTS:
+    if attempts != EASY_LEVEL_ATTEMPTS and attempts != HARD_LEVEL_ATTEMPTS:
         print("You have entered wrong difficulty level...\nPlay again!!")
         return
     guessed_number = 0
